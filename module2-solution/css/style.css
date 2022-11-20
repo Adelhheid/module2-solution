@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.row {
+    padding: 0 30px;
+}
+
+.chicken_block,
+.beef_block,
+.sushi_block {
+    position: relative;
+
+}
+
+.header1,
+.header2,
+.header3 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    border: 1px solid black;
+    width: 100px;
+}
+
+.header1 {
+    background-color: rgb(231, 156, 156);
+}
+
+.header2 {
+    color: white;
+    background-color: rgb(146, 45, 45);
+}
+
+.header3 {
+    background-color: rgb(235, 216, 111);
+}
+
+.text1,
+.text2,
+.text3 {
+    text-align: justify;
+    background-color: orange;
+    padding: 30px 25px 10px;
+    border: 1px solid black;
+    margin: 10px;
+
+}
+
+
+@media screen and (min-width:992px) {
+    .col-lg-4 {
+        width: 33.33%;
+        float: left;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .col-md-6 {
+        width: 50%;
+        float: left;
+    }
+
+    .col-md-12 {
+        width: 100%;
+        float: left;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .header1,
+    .header2,
+    .header3 {
+        top: 0px;
+        right: 0px;
+    }
+
+    .text1,
+    .text2,
+    .text3 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
